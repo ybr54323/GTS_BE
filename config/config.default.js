@@ -34,7 +34,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1614173920207_7097';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = [ 'errorHandler' ];
 
   // add your user config here
   const userConfig = {
@@ -89,17 +89,9 @@ module.exports = appInfo => {
   };
 
   config.onerror = {
-    json(err, ctx) {
-      if (err instanceof NoLogin) {
-        ctx.status = 401;
-        ctx.body = {
-          msg: '请先登录',
-        };
-        return;
-      }
-      ctx.body = {
-        msg: err.message,
-      };
+    all(err, ctx) {
+      ctx.status = 200;
+      ctx.body = '<h1>gg</h1>';
     },
   };
   return {
