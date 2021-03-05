@@ -6,7 +6,7 @@ module.exports = app => {
   const Node = app.model.define('nodes', {
     id: { type: UUID, primaryKey: true, defaultValue: UUIDV4 },
     name: STRING(30),
-    parents_id: { type: UUID, allowNull: true },
+    parent_id: { type: UUID, allowNull: true },
     created_at: DATE,
     updated_at: DATE,
     is_delete: { type: INTEGER, defaultValue: 0, comment: '0正常 1删除' },
