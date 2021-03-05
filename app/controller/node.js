@@ -94,7 +94,7 @@ class NodeController extends BaseController {
         isDelete: 0,
       },
     });
-    const goodList =await findGoodListByNodeId(nodeId);
+    const goodList = await findGoodListByNodeId(nodeId);
     this.success({ data: {
       childNodeList,
       goodList,

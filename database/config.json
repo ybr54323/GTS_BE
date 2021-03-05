@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "user",
+    "password": "Ybr1994122954323@",
+    "database": "GTS",
+    "host": "gz-cynosdbmysql-grp-2v647rgz.sql.tencentcdb.com",
+    "port": "25453",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "user",
+    "password": "Ybr1994122954323@",
+    "database": "GTS",
+    "host": "gz-cynosdbmysql-grp-2v647rgz.sql.tencentcdb.com",
+    "port": "25453",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "user",
+    "password": "Ybr1994122954323@",
+    "database": "GTS",
+    "host": "gz-cynosdbmysql-grp-2v647rgz.sql.tencentcdb.com",
+    "port": "25453",
+    "dialect": "mysql"
+  }
+}
